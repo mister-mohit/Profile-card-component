@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color:hsla(185, 75%, 39%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+}
+
+.container{
+    background-color: white;
+    height:auto;
+    width: 350px;
+    border-radius: 15px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.image-container{
+    background-image: url("./images/bg-pattern-card.svg");
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
+.image-container > img {
+    position: relative;
+    top: 100px;
+    border-radius: 100%;
+    border:5px solid white;
+    height: 100px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.profile > h1{
+    font-weight: 700;
+    font-size: 20px;
+    color: hsla(229, 23%, 23%);
+}
+
+.profile > p {
+    font-weight: 400;
+    color: hsla(227, 10%, 46%);
+}
+
+.info h2{
+    font-size: 20px;
+    font-weight:700;
+    color: hsla(229, 23%, 23%);
+    margin-bottom: 5px;
+}
+
+.info >div >p {
+    font-size: 12px;
+    color:hsla(227, 10%, 46%);
+}
+
+.info>div{
+    text-align: center;
+}
+
+.profile  span{
+    font-weight: 400;
+    color:hsla(227, 10%, 46%);
+}
+
+@media (max-width: 375px){
+    .container{
+        width: 300px;
+    }
+}
+.attribution { font-size: 11px; text-align: center; color: white;}
+.attribution a { color: hsl(228, 45%, 44%); }
